@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOURNAX</title>
+    <script src="https://kit.fontawesome.com/1bf0c9d6de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        body{
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            
+            max-width: 1300px;
+            margin: auto;
+        }
+
+       
+
+        .nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav.nav>button#nav-btn{
+            background-color: white;
+            padding: 16px 20px;
+            border: none;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .nav2{
+            margin-left: 300px ;
+            
+        }
+        #nav-elem{
+            padding: 15px 60px;
+            margin: 0px 250px;
+        }
+
+        #nav2-hamburger{
+                display: none;
+        }
+        
+
+        #nav-btn-hamburger{
+            background-color: white;
+            padding: 16px 20px;
+            border: none;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        div#nav-elem>a{
+            color: black;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .main-content{
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #card{
+            max-width: 400px;
+            padding: 30px 15px;
+        }
+        div#card>img{
+            border-radius: 5px;
+        }
+        #card2{
+            max-width: 300px;
+            padding: 5px 15px;
+        }
+        div#card2>img{
+            border-radius: 5px;
+        }
+        div#footer-img>img{
+            width: 300px;
+        }
+
+        #section1{
+            display: flex; 
+            margin-bottom: 100px;
+            flex-wrap: wrap; 
+        }
+
+        #section2{
+            display: flex;
+             
+        }
+
+        #section3{
+            display: flex;
+            flex-wrap: wrap; 
+            margin-bottom: 100px;
+        }
+
+        #footer1{
+            display: flex; 
+            margin-bottom: 100px; 
+            gap: 2%;
+        }
+
+        @media (width < 1300px){
+            .container{
+                width: 200%;
+                margin: 0px 20px;
+            }
+        }
+
+        @media (width <= 769px) {
+
+                #section1{
+                display: flex; 
+                margin-bottom: 100px;
+                flex-wrap: wrap; 
+            }
+
+            #section2{
+                display: flex;
+                flex-wrap: wrap;  
+            }
+
+            #section3{
+                display: flex;
+                flex-wrap: wrap; 
+                margin-bottom: 100px;
+            }
+
+            #footer1{
+            display: flex;
+            flex-wrap: wrap; 
+            margin-bottom: 100px;
+            justify-content: space-between;
+            gap: 2%;
+        }
+
+            #nav2{
+                display: none;
+            }
+            #nav-btn{
+                display: none;
+            }
+            #nav2-hamburger{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            #main-content{
+                width: 100%;
+            }
+
+            #main-content img{
+                max-width: 720px;
+            }
+
+            #content{
+                max-width: 720px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+            <nav class="nav">
+                <div style="margin-top: 20px; margin-bottom: 0px;">
+                    <span class="material-symbols-outlined" style="font-size: 200%;" id="hamburger-menu">
+                        menu
+                        </span>  
+                </div>
+                
+                <h1 style="font-weight: bolder;">JOURNAX</h1>
+                <button id="nav-btn">Subscribe</button>
+            </nav>
+            <hr style="margin: 0px;"/>
+            <nav id="nav2">
+                <div id="nav-elem" > 
+                    <a href="" >health</a>
+                    <a href="">Politics</a>
+                    <a href="">Sports</a>
+                    <a href="">World News</a>
+                    <a href="">Business</a>
+                    <a href="">Technology</a>
+                    <a href="">Cart(0)</a>
+                </div>    
+            </nav>
+            <nav id="nav2-hamburger" style="position: relative;">
+                <div id="nav-elem"> 
+                    <a href="" >health</a>
+                    <a href="">Politics</a>
+                    <a href="">Sports</a>
+                    <a href="">World News</a>
+                    <a href="">Business</a>
+                    <a href="">Technology</a>
+                    <a href="">Cart(0)</a>
+                    <button id="nav-btn-hamburger">Subscribe</button>
+                </div>    
+            </nav>
+            <hr style="margin: 0px;"/>
+            
+        </header>
+        <main class="main-content">
+            <div id="content" style="padding-right: 40px;">
+                <button style="border: 1px solid silver; border-radius: 10px; background-color: white; padding: 5px 10px;" >World News</button>
+                <h2 style="font-size: 30px; font-weight: 500;" >Unveiling the stories & significance of historic landmarks</h2>
+                <p style="margin-top: 350px;"> 
+                    Discover the rich heritage, architectural marvels, and pivotal events that have shaped these iconic sites.
+                    Through our in-depth coverage, gain a deeper appreciation for the legacy.
+                </p>
+                <p style="font-size: 15px;"> 
+                    Marvin McKinney - June 29, 2024
+
+                </p>
+                <hr style="margin: 0px;"/>
+            </div>
+            <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb0b7962fe6b39d24c427_news-main-13.jpg" alt="main-img" width="70%">
+        </main>
+        <section id="section1">
+            <div id="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb0e8410927def6cf78fc_news-main-14.jpg" alt="img" width="400px">
+                <p style="font-weight: 500; font-size: 20px;">The rise of next-gen sports stars</p>
+                <p style="font-size: 15px;">  From breakthrough performances to inspiring stories, we spotlight the next generation of athletes making waves in the sports world.</p>
+                <p style="font-size: 12px;">Leslie Alexander</p>
+            </div>
+            <div id="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb128538b017fc4bfc5d0_news-main-15.jpg" alt="img" width="400px">
+                <p style="font-weight: 500; font-size: 20px;">The rise of next-gen sports stars</p>
+                <p style="font-size: 15px;">  From breakthrough performances to inspiring stories, we spotlight the next generation of athletes making waves in the sports world.</p>
+                <p style="font-size: 12px;">Leslie Alexander</p>
+            </div>
+            <div id="card">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667eb160981c24e8197d4773_news-main-16.jpg" alt="img" width="400px">
+                <p style="font-weight: 500; font-size: 20px;">The rise of next-gen sports stars</p>
+                <p style="font-size: 15px;">  From breakthrough performances to inspiring stories, we spotlight the next generation of athletes making waves in the sports world.</p>
+                <p style="font-size: 12px;">Leslie Alexander</p>
+            </div>
+        </section>
+        <hr style="" />
+        <div id="section-break" style="display: flex; ">
+            <img src="./heading-icon.svg" alt="img" width="15px">
+            <h1 style="font-weight: 300; margin-left: 10px;" >Editor's Choice</h1>
+        </div>
+        <section id="section2">
+            <div id="card2">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa680ac3a18d3521e9eaa_news-main-17.jpg" alt="img" width="300px" height="400px">
+                <p style="font-weight: 500; font-size: 20px;">International community expresses hope for resolution</p>
+                <p style="font-size: 12px;">World News</p>
+            </div>
+            <div id="card2">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa725f63d48d8d7b8f990_news-main-18.jpg" alt="img" width="300px" height="300px">
+                <p style="font-weight: 500; font-size: 20px;">Season's most dramatic races</p>
+                <p style="font-size: 12px;">Sports</p>
+            </div>
+            <div id="card2">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa75a54fd8006e677fc0d_news-main-19.jpg" alt="img" width="300px" height="350px">
+                <p style="font-weight: 500; font-size: 20px;">TInnovations driving the future of transportation</p>
+                <p style="font-size: 12px;">Technology</p>
+            </div>
+            <div id="card2">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667fa7be30e08d7a4036ae53_news-main-20.jpg" alt="img" width="300px" height="250px">
+                <p style="font-weight: 500; font-size: 20px;">Supply chain disruptions challenges and solutions for businesses worldwide</p>
+                <p style="font-size: 12px;">Buisness</p>
+            </div>
+        </section>
+        <img src="./background image.png" alt="background-image" width="100%">
+        <hr style="height: 1px solid black;" />
+        <div id="section-break" style="display: flex; ">
+            <img src="./heading-icon.svg" alt="img" width="15px">
+            <h1 style="font-weight: 300; margin-left: 10px;" >Staff Writers</h1>
+        </div>
+        <section id="section3">
+            <div id="card2" style="padding-left: 0px;">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d0511259c918e72509691_author-main-01-p-800.jpg" alt="img" width="320px" height="350px">
+                <p style="font-weight: 500; font-size: 20px;">Theresa Webb</p>
+                <p style="font-size: 12px;">Senior Reporter</p>
+            </div>
+            <div id="card2">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d0539f5cd6d3a8e8f15a0_author-main-02-p-800.jpg" alt="img" width="320px" height="350px">
+                <p style="font-weight: 500; font-size: 20px;">Marvin McKinney</p>
+                <p style="font-size: 12px;">Publisher</p>
+            </div>
+            <div id="card2">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d056c783d376b3fe21bb7_author-main-03-p-800.jpg" alt="img" width="320px" height="350px">
+                <p style="font-weight: 500; font-size: 20px;">Wade Warren</p>
+                <p style="font-size: 12px;">Content Writer</p>
+            </div>
+            <div id="card2" style="padding-right: 0px;">
+                <img src="https://cdn.prod.website-files.com/667bd81876339d31af9381fa/667d058ec1e876bede9c10b2_author-main-04-p-500.jpg" alt="img" width="320px" height="350px">
+                <p style="font-weight: 500; font-size: 20px;">Leslie Alexander</p>
+                <p style="font-size: 12px;">Editorialist</p>
+            </div>
+        </section>
+        <footer id="footer1">
+            <div style="background-color:#c4e0fb ; width: 800px; padding-left: 50px; padding-top: 15px; border-radius: 5px;">
+                <div style="max-width: 500px; margin-bottom: 90px;">
+                    <p>Subscribe to our Newsletter</p>
+                    <p style="font-weight: 500; font-size: 30px;">Empower yourself subscribe to our expert analysis and insights</p>
+                    <p style="font-weight: 300;">From breaking news to thought-provoking opinion pieces, our newsletter keeps you informed.</p>
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter your e-mail..." style="width: 350px; padding: 10px; border: 1px solid grey; background-color:#c4e0fb ; border-radius: 5px;">
+                    <button style="color: white; background-color: black; padding: 10px 15px; border-radius: 5px;">Subscribe Now</button>
+                </div>
+            </div>
+            <div id="footer-img" style="background-color: #fbe8c4; padding-left: 90px; padding-top: 70px; width: 400px; border-radius: 5px;">
+                <img src="https://cdn.prod.website-files.com/660fedec1ab54b2595c51e30/667d0971bf5cc7d1c3d3ff9c_cta-mobile.png" alt="">
+            </div>
+        </footer>
+        <footer style="background-color: rgb(17,17,17); color: white; display: flex; justify-content: space-around;">
+            <div style="height: 300px;">Pages</div>
+            <div style="height: 300px;">Category</div>
+            <div style="height: 300px;">Resources</div>
+            <div style="height: 300px;">Socials</div>
+            
+        </footer>
+        <div style="background-color: rgb(17,17,17);">
+            <h1 style="color: white; font-size: 30px; padding: 20px 10px;">JOURNAX</h1>
+        </div>  
+    </div>
+    
+</body>
+</html>
